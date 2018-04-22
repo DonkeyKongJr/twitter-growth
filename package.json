@@ -1,0 +1,17 @@
+{
+  "name": "twitter-growth",
+  "version": "1.0.0",
+  "description": "An Application which growths your followers count on twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "twitter",
+    "growth",
+    "follower",
+    "following"
+  ],
+  "author": "Patrick Schadler",
+  "license": "MIT"
+}
