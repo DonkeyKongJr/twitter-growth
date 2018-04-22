@@ -13,5 +13,8 @@
     "following"
   ],
   "author": "Patrick Schadler",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
 }
