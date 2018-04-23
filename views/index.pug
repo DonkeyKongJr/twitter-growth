@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  head
+    title Twitter Growth
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+  body
+    div.row
+        div.col-md-6.col-md-offset-3
+          h1.text-center Twitter Growth
+          form(action="follow", method="POST")
+            input.form-control(type="text", name="account", placeholder="Enter the target account")
+            input.form-control.btn.btn-primary(type="submit" value="Start following!")

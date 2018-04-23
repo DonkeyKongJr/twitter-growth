@@ -15,7 +15,9 @@
   "author": "Patrick Schadler",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.3",
+    "pug": "^2.0.3",
     "twitter": "^1.7.1"
   }
 }
