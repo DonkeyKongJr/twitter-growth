@@ -2,7 +2,7 @@ var Twitter = require('twitter');
 var config = require('./config.json');
 
 const client = new Twitter(config);
-const targetAccountName = 'ORF';
+const targetAccountName = 'patzistar';
 let ids = [];
 
 console.log("Starting Twitter growth application...");
@@ -25,7 +25,7 @@ function createFriendships(ids){
         if (accountIteration < ids.length) {
             console.log(`Trying to add ${ids[accountIteration]} as friend.`);
 
-            client.post('friendships/create', {user_id:ids[accountIteration]}, function(error, data, response){
+            client.post('friendships/create', {user_id:ids[accountIteration], follow:true}, function(error, data, response){
                 if(error)
                     console.log(error);
                 else
