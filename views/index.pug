@@ -1,12 +1,19 @@
 doctype html
-html(lang="en")
+html(lang='en')
   head
     title Twitter Growth
-    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='/socket.io/socket.io.js')
+    script(src='https://code.jquery.com/jquery-1.11.1.js')
+    script
+      include ../client.socket.js
   body
     div.row
         div.col-md-6.col-md-offset-3
           h1.text-center Twitter Growth
-          form(action="follow", method="POST")
-            input.form-control(type="text", name="account", placeholder="Enter the target account")
-            input.form-control.btn.btn-primary(type="submit" value="Start following!")
+          form(action='follow', method='POST')
+            input.form-control(type='text', name='account', placeholder='Enter the target account')
+            input.form-control.btn.btn-primary(type='submit' value='Start following!')
+        div.col-md-6.col-md-offset-3
+          h2.text-center  Results
+             div#results 
